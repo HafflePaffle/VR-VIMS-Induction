@@ -42,29 +42,6 @@ public class SpinManager : MonoBehaviour
         degreesPerSecondY = singletonSettings.degreesPerSecond;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(keyX))
-        {
-            StartXRotation();
-        }
-
-        if (Input.GetKeyDown(keyY))
-        {
-            StartYRotation();
-        }
-
-        if(Input.GetKeyDown(keyZ))
-        {
-            StartWaves();
-        }
-
-        if(Input.GetKeyDown(keyC))
-        {
-            StartCircularMovement();
-        }   
-    }
-
     public void StartXRotation()
     {
         Debug.Log($"StartXRotation called. DPS: {degreesPerSecondX}, Degrees: {degreesToTurnX}");
