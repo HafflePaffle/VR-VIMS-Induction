@@ -1,0 +1,5 @@
+/home/haf/Documents/GitHub/VIMS-Inducer/TheVIMSer/.utmp/RelWithDebInfo/4u552i32/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/haf/Documents/GitHub/VIMS-Inducer/TheVIMSer/.utmp/RelWithDebInfo/4u552i32/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/haf/Documents/GitHub/VIMS-Inducer/TheVIMSer/.utmp/RelWithDebInfo/4u552i32/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/home/haf/Documents/GitHub/VIMS-Inducer/TheVIMSer/.utmp/RelWithDebInfo/4u552i32/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/home/haf/Documents/GitHub/VIMS-Inducer/TheVIMSer/.utmp/RelWithDebInfo/4u552i32/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

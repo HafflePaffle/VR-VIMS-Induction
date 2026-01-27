@@ -1,0 +1,2 @@
+D:\Student projects\VIMSInduction\VIMS-Inducer\TheVIMSer\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\Student projects\VIMSInduction\VIMS-Inducer\TheVIMSer\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

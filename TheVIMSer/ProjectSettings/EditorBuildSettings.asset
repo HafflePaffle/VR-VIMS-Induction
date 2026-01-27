@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/NewScenes/New Scene.unity
+    guid: 2b41a00b52185ed489794ccf145ef86c
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/Final test scener/VR 1.unity
+    guid: ab29c282d682adf4c979c9e681f61ad5
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/Final test scener/VR 2.unity
+    guid: 89d2601c48c02cd45a47a87cc5dd050a
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/Final test scener/VR 3.unity
+    guid: 025fc46e606ac30479cd615167fa462e
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/Final test scener/VR 4.unity
+    guid: 8aa8ec2de6c49af47852600b863e230f
+  - enabled: 0
+    path: Assets/Walk-Test/Scenes/PARK DONE.unity
+    guid: b6f7b868b174ff849b87b61964c0ea34
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/Asher Scenes/Without sound.unity
+    guid: 61a88f7346ca740519aee47bc8f7b880
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/Asher Scenes/With sound.unity
+    guid: de54a4cb4c732a3f297b8d33c6799024
+  - enabled: 0
+    path: Assets/VIMS-Induction/Scenes/Asher Scenes/Drum.unity
+    guid: b1036b30fa3b3074fb4199996e15a8af
+  - enabled: 1
+    path: Assets/VIMS-Induction/Scenes/Settings UI.unity
+    guid: 0d086f121de024941a2ffa2ffad5965b
+  - enabled: 1
+    path: Assets/VIMS-Induction/Scenes/Spheres.unity
+    guid: 9a522a2a855169f49ada5361fd59cd39
+  - enabled: 1
+    path: Assets/VIMS-Induction/Scenes/Striped drum.unity
+    guid: f69e7973b9c5d144baaabac322ef8fdc
+  - enabled: 1
+    path: Assets/VIMS-Induction/Scenes/Drum.unity
+    guid: 6d6ab1d12cfff2a49b69047a314fbcc0
+  - enabled: 1
+    path: Assets/VIMS-Induction/Scenes/Custom Drum.unity
+    guid: db41ce099dee6f5f29f236377a02dccf
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 675f3740616e30f4e9a75deb1e76804f, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d2ca90865ce960f48b55e1ab2d8bc410, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: da8b407b96276024b8c72cc26ded5993, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6182e9897d9574842a618fcbb9961336, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 1f47c12b50a58a54e81bb5552e2d834b, type: 2}
+  m_UseUCBPForAssetBundles: 0

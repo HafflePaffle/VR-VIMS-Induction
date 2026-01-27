@@ -1,0 +1,5 @@
+D:/Student projects/VIMSInduction/VIMS-Inducer/TheVIMSer/.utmp/Debug/6z6t2g1h/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/Student projects/VIMSInduction/VIMS-Inducer/TheVIMSer/.utmp/Debug/6z6t2g1h/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/Student projects/VIMSInduction/VIMS-Inducer/TheVIMSer/.utmp/Debug/6z6t2g1h/arm64-v8a/GameActivity/CMakeFiles/game.dir
+D:/Student projects/VIMSInduction/VIMS-Inducer/TheVIMSer/.utmp/Debug/6z6t2g1h/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+D:/Student projects/VIMSInduction/VIMS-Inducer/TheVIMSer/.utmp/Debug/6z6t2g1h/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
