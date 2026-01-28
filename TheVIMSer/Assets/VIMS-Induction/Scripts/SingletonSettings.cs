@@ -9,6 +9,7 @@ namespace SingletonSetup
         public static SingletonSettings Instance { get; private set; }
 
         public float degreesPerSecond = 80f;
+        public float frequency = 0.2f;
         public int sceneIndex = 0;
         public bool lyingDown = false;
         public bool rotateLeft = false;

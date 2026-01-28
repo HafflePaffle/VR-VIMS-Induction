@@ -22,6 +22,7 @@ public class SpinManager : MonoBehaviour
     [SerializeField] private KeyCode keyZ;
     [SerializeField] private Transform waver;
     public float waveOffset;
+    public float frequency = 0.2f;
     private bool waving;
 
     [Header("Circular movement settings")]
@@ -40,6 +41,7 @@ public class SpinManager : MonoBehaviour
     {
         singletonSettings = FindFirstObjectByType<SingletonSetup.SingletonSettings>();
         degreesPerSecondY = singletonSettings.degreesPerSecond;
+        frequency = singletonSettings.frequency;
     }
 
     public void StartXRotation()
@@ -203,7 +205,7 @@ public class SpinManager : MonoBehaviour
     {
         //The whole movement should take 5 seconds
         waving = true;
-        float totalTime = 5;
+        float totalTime = 1/frequency;
         float elapsedTime = 0f;
         Vector3 startPosition = waver.position;
         float topPosition = startPosition.y + waveOffset;
