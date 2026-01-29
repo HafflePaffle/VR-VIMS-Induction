@@ -464,7 +464,6 @@ GameObject:
   - component: {fileID: 793568385}
   - component: {fileID: 793568384}
   - component: {fileID: 793568383}
-  - component: {fileID: 793568387}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -537,25 +536,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793568381}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41609764, y: 1.6, z: 0.233}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 90.06, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1113286544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &793568387
+--- !u!114 &816476679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793568381}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f650f1f56faa49247b16f097dd324af4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: XRI RightHand Interaction/Click Stick
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 62e5c4012eba4d2459e451584c6afd11, type: 3}
+  m_ActionId: c5c86bbe-2fe8-40ed-86d3-d3a87dab2f4a
 --- !u!1 &1015130308
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +621,51 @@ Transform:
   - {fileID: 1393581561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1113286543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113286544}
+  - component: {fileID: 1113286545}
+  m_Layer: 0
+  m_Name: CylinderParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1113286544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113286543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41609764, y: 1.6, z: 0.233}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 793568385}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1113286545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113286543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f650f1f56faa49247b16f097dd324af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1171330266
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +677,7 @@ GameObject:
   - component: {fileID: 1171330268}
   - component: {fileID: 1171330267}
   - component: {fileID: 1171330270}
+  - component: {fileID: 1171330271}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -651,21 +698,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyX: 119
-  xAxis: {fileID: 1393581561}
+  xAxis: {fileID: 793568385}
   degreesPerSecondX: 0
   degreesToTurnX: 0
   keyY: 101
-  yAxis: {fileID: 1393581561}
+  yAxis: {fileID: 793568385}
   degreesPerSecondY: 81.8
   degreesToTurnY: 216000
   hasRotated: 0
   keyZ: 113
-  waver: {fileID: 1063349558}
+  waver: {fileID: 793568385}
   waveOffset: 0.5
   frequency: 0.2
   keyC: 100
   center: {fileID: 1265246830}
-  player: {fileID: 1393581561}
+  player: {fileID: 793568385}
   radiusX: 0
   radiusZ: 0
 --- !u!4 &1171330268
@@ -695,6 +742,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ee49e8823eb5f4da18226a4006eae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1171330271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171330266}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bade78fee72ae154f9b38f02060236ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoStarter
+  delay: 1
+  events:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1171330267}
+        m_TargetAssemblyTypeName: SpinManager, Assembly-CSharp
+        m_MethodName: StartYRotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1171330267}
+        m_TargetAssemblyTypeName: SpinManager, Assembly-CSharp
+        m_MethodName: StartWaves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1265246829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,30 +1187,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EyeTrackingCollector, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PupilometryCollector, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   rightBButton:
     m_UseReference: 0
     m_Action:
@@ -1147,10 +1210,10 @@ MonoBehaviour:
   rightBAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
-        m_MethodName: SwitchSceneByIndex
-        m_Mode: 3
+      - m_Target: {fileID: 1171330267}
+        m_TargetAssemblyTypeName: SpinManager, Assembly-CSharp
+        m_MethodName: StopYRotation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1184,7 +1247,31 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1171330267}
         m_TargetAssemblyTypeName: SpinManager, Assembly-CSharp
-        m_MethodName: StopYRotation
+        m_MethodName: StartWaves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1171330267}
+        m_TargetAssemblyTypeName: SpinManager, Assembly-CSharp
+        m_MethodName: StartXRotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1171330267}
+        m_TargetAssemblyTypeName: SpinManager, Assembly-CSharp
+        m_MethodName: StartYRotation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1217,9 +1304,9 @@ MonoBehaviour:
   leftYAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793568387}
-        m_TargetAssemblyTypeName: CylinderRotator, Assembly-CSharp
-        m_MethodName: RotateCylinder
+      - m_Target: {fileID: 1171330267}
+        m_TargetAssemblyTypeName: SpinManager, Assembly-CSharp
+        m_MethodName: StopYRotation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1230,7 +1317,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   rightStickClick:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Right Stick Click
       m_Type: 0
@@ -1240,10 +1327,22 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 816476679}
   rightStickClickAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1171330270}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchSceneByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   leftStickClick:
     m_UseReference: 1
     m_Action:
@@ -1468,6 +1567,6 @@ SceneRoots:
   - {fileID: 67536424}
   - {fileID: 1171330268}
   - {fileID: 1063349558}
-  - {fileID: 793568385}
+  - {fileID: 1113286544}
   - {fileID: 1265246830}
   - {fileID: 1744243614}

@@ -80,6 +80,7 @@ public class SpinManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         degreesToTurnY = x;
+        rotatingY = false;
     }
 
     public void StartWaves()
@@ -138,10 +139,10 @@ public class SpinManager : MonoBehaviour
         while (elapsedTime < totalTime)
         {
             float newRotation = Mathf.Lerp(startRotation, endRotation, elapsedTime / totalTime);
-            yAxis.transform.eulerAngles = new Vector3(
-                yAxis.transform.eulerAngles.x,
+            yAxis.transform.localEulerAngles = new Vector3(
+                yAxis.transform.localEulerAngles.x,
                 newRotation,
-                yAxis.transform.eulerAngles.z);
+                yAxis.transform.localEulerAngles.z);
 
             elapsedTime += Time.deltaTime;
             yield return null;
@@ -155,47 +156,27 @@ public class SpinManager : MonoBehaviour
     {
         rotatingY = true;
 
-        // Use absolute magnitude for duration so totalTime is always positive
         float magnitude = Mathf.Abs(degreesToTurnY);
         float totalTime = (degreesPerSecondY == 0f) ? 0f : magnitude / degreesPerSecondY;
         float elapsedTime = 0f;
 
         float startRotation = yAxis.transform.eulerAngles.y;
-        // Reverse direction by subtracting degreesToTurnY instead of adding it
         float endRotation = startRotation - degreesToTurnY;
 
         Debug.Log("RotateYAxis started (reversed)");
-
-        if (totalTime <= 0f)
-        {
-            // Instant snap if there's no time to animate
-            yAxis.transform.eulerAngles = new Vector3(
-                yAxis.transform.eulerAngles.x,
-                endRotation,
-                yAxis.transform.eulerAngles.z);
-            rotatingY = false;
-            hasRotated = true;
-            yield break;
-        }
 
         while (elapsedTime < totalTime)
         {
             float t = elapsedTime / totalTime;
             float newRotation = Mathf.Lerp(startRotation, endRotation, t);
-            yAxis.transform.eulerAngles = new Vector3(
-                yAxis.transform.eulerAngles.x,
+            yAxis.transform.localEulerAngles = new Vector3(
+                yAxis.transform.localEulerAngles.x,
                 newRotation,
-                yAxis.transform.eulerAngles.z);
+                yAxis.transform.localEulerAngles.z);
 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-
-        // Ensure final rotation exactly matches endRotation
-        yAxis.transform.eulerAngles = new Vector3(
-            yAxis.transform.eulerAngles.x,
-            endRotation,
-            yAxis.transform.eulerAngles.z);
 
         rotatingY = false;
         hasRotated = true;
